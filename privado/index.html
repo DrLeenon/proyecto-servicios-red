@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Área restringida · srv-web</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/privado.css">
+  <script src="../js/main.js" defer></script>
+</head>
+<body>
+  <main class="card">
+    <div class="lock">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 7.5-2"/></svg>
+    </div>
+    <span class="pill ok">Acceso autorizado</span>
+    <h1>Área restringida</h1>
+    <p>Si ves esta página, Apache validó tu usuario y contraseña. Sin credenciales
+      válidas, el servidor responde <code>401 Unauthorized</code> y no muestra este contenido.</p>
+    <dl>
+      <dt>Ruta</dt><dd>/var/www/proyecto/privado</dd>
+      <dt>Método</dt><dd>Autenticación básica (htpasswd)</dd>
+      <dt>Servidor</dt><dd>srv-web · 192.168.10.10</dd>
+      <dt>Accediste como</dt><dd id="host">—</dd>
+    </dl>
+    <a class="btn" href="../index.html">← Volver al sitio</a>
+  </main>
+</body>
+</html>
